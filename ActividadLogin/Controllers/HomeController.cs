@@ -8,7 +8,8 @@ namespace ActividadLogin.Controllers
     {
         public IActionResult Index()
         {
-           return View();
+            ViewBag.Mensaje = "Actividad login";
+            return View();
         }
 
         [HttpPost]
@@ -16,12 +17,12 @@ namespace ActividadLogin.Controllers
         {
             if (ModelState.IsValid)
             {
-                ViewBag.Mensaje = "Dios Cris te como la boca <3";
+                ViewBag.Mensaje = "ta bien c:";
                 return View("Index");
             }
             else
             {
-                ViewBag.Mensaje = "Ta mal";
+                ViewBag.Mensaje = "ta mal :c";
                 return View("Index", usuarioModel);
             }
 

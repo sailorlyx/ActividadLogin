@@ -1,6 +1,6 @@
 ﻿@model ActividadLogin.Models.UsuarioModel
 @{
-    ViewData["Title"] = "Gracias Cris <3";
+    ViewData["Title"] = "Inicio";
 } 
 @if (ViewBag.Mensaje != null)
 {
@@ -11,11 +11,11 @@
 @using (Html.BeginForm("Login", "Home", FormMethod.Post))
 {
     <p>
-        Introduce tu usuario: @Html.TextBoxFor(modelo => modelo.usuario)
+        Introduce tu usuario: @Html.TextBoxFor(modelo => modelo.usuario, new { placeholder = "tu email uwu" })
         @Html.ValidationMessageFor(modelo => modelo.usuario)
     </p>
     <p>
-        Introduce tu contraseña:@Html.PasswordFor(modelo => modelo.contra)
+        Introduce tu contraseña:@Html.PasswordFor(modelo => modelo.contra, new { placeholder = "tu contra owo" })
         @Html.ValidationMessageFor(modelo => modelo.contra)
     </p>
     <input type="submit" name="iniciarsesion" value="Iniciar sesión">
