@@ -6,7 +6,8 @@
 {
     @ViewBag.Mensaje;
 }
-    <h2>Actividad de Login 2.0</h2>
+    <h2>Iniciar sesión</h2>
+    
 
 @using (Html.BeginForm("Login", "Home", FormMethod.Post))
 {
@@ -18,5 +19,9 @@
         Introduce tu contraseña: @Html.PasswordFor(modelo => modelo.contra)
         @Html.ValidationMessageFor(modelo => modelo.contra)
     </p>
-    <input type="submit" name="iniciarsesion" value="Iniciar sesión">
+    <input type="submit" name="iniciarsesion" value="Iniciar sesión"> 
 }
+
+<p class="registro">¿No tienes cuenta? Regístrate &#10047;</p>
+
+

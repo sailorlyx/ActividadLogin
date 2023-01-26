@@ -17,7 +17,7 @@ namespace ActividadLogin.Controllers
             if (ModelState.IsValid)
             {
                 ViewBag.Mensaje = "ta bien c:";
-                return View("Index");
+                return View();
             }
             else
             {
@@ -25,6 +25,21 @@ namespace ActividadLogin.Controllers
                 return View("Index", usuarioModel);
             }
 
+        }
+
+        public ActionResult Registro(RegistroModel registromodel)
+        {
+            if (ModelState.IsValid)
+            {
+                ViewBag.Mensaje = "te has registrado correctamente c:";
+                return View();
+            }
+            else
+            {
+                ViewBag.Mensaje = "no has introducido bien los datos, vuelve a empezar porfis";
+                return View("Registro", registromodel);
+            }
+            
         }
     }
 }

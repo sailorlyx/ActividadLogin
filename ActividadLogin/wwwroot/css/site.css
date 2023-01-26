@@ -34,3 +34,7 @@ input:focus {
     background-color:#eaeaea;
 }
     
+.registro {
+    margin-top:20px;
+    text-decoration:underline;
+}
