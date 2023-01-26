@@ -17,7 +17,7 @@ namespace ActividadLogin.Controllers
             if (ModelState.IsValid)
             {
                 ViewBag.Mensaje = "ta bien c:";
-                return View();
+                return View("Index");
             }
             else
             {
