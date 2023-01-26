@@ -8,7 +8,6 @@ namespace ActividadLogin.Controllers
     {
         public IActionResult Index()
         {
-            ViewBag.Mensaje = "Actividad login";
             return View();
         }
 

@@ -6,16 +6,16 @@
 {
     @ViewBag.Mensaje;
 }
-    <h2>Actividad de login sencillo</h2>
+    <h2>Actividad de Login 2.0</h2>
 
 @using (Html.BeginForm("Login", "Home", FormMethod.Post))
 {
     <p>
-        Introduce tu usuario: @Html.TextBoxFor(modelo => modelo.usuario, new { placeholder = "tu email uwu" })
+        Introduce tu usuario: @Html.TextBoxFor(modelo => modelo.usuario)
         @Html.ValidationMessageFor(modelo => modelo.usuario)
     </p>
     <p>
-        Introduce tu contraseña:@Html.PasswordFor(modelo => modelo.contra, new { placeholder = "tu contra owo" })
+        Introduce tu contraseña: @Html.PasswordFor(modelo => modelo.contra)
         @Html.ValidationMessageFor(modelo => modelo.contra)
     </p>
     <input type="submit" name="iniciarsesion" value="Iniciar sesión">
