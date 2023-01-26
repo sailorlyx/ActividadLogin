@@ -13,7 +13,7 @@ B) Mínimo Registro:
 - Separar la cabecera y el pie del _layout
 
 Opcionales :
-Limitar a que el usuario solo pueda ser un correo.
-Controlar que el password sea seguro ( 1 letra mayúscula, 1 numero y 8 caracteres mínimo).
-Que el password oculte el texto con *.
-Comprobar que el usuario ya exista y salga mensaje de error.
+- Limitar a que el usuario solo pueda ser un correo.
+- Controlar que el password sea seguro ( 1 letra mayúscula, 1 numero y 8 caracteres mínimo).
+- Que el password oculte el texto con *.
+- Comprobar que el usuario ya exista y salga mensaje de error.
