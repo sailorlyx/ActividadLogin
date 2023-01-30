@@ -12,7 +12,5 @@ namespace ActividadLogin.Models
         [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z]).{8,}$", ErrorMessage = "losiento contraseña pocha")]
         public string contra { get; set; }
 
-
-
     }
 }

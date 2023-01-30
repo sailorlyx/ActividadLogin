@@ -32,12 +32,12 @@ namespace ActividadLogin.Controllers
             if (ModelState.IsValid)
             {
                 ViewBag.Mensaje = "te has registrado correctamente c:";
-                return View();
+                return View("Registro");
             }
             else
             {
                 ViewBag.Mensaje = "no has introducido bien los datos, vuelve a empezar porfis";
-                return View("Registro", registromodel);
+                return RedirectToAction("Registro", registromodel);
             }
             
         }
