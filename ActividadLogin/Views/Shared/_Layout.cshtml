@@ -12,6 +12,7 @@
 </head>
 <body>
     <header>
+        @*@Html.Partial("_Header")*@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Actividad Login 2.0</a>
@@ -34,7 +35,7 @@
             @RenderBody()
         </main>
     </div>
-
+    @*@Html.Partial("_Footer")*@
     <footer class="border-top footer text-muted">
         <div class="container">
             Actividad Login 2.0 - this is not even my final form&#9787;
